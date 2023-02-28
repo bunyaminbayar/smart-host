@@ -21,50 +21,20 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Detailed explanation about the application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The code is a simple web application that allows hotel owners to enter the number of available premium and economy rooms for the night, and calculates how many rooms of each category will be occupied and the total revenue generated for the night, based on an array of numbers representing the willingness of potential guests to pay for a room.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application is built using React.js, a popular JavaScript library for building user interfaces. The code starts by defining a functional component called RoomOccupancyCalculator, which renders the user interface of the application.
 
-### `npm run eject`
+The component uses React hooks, specifically the useState hook, to manage the state of the application. It defines two state variables, numPremiumRooms and numEconomyRooms, which store the number of available premium and economy rooms entered by the user.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The component also defines a state variable called potentialGuests, which is an array of numbers representing the willingness of potential guests to pay for a room. The array is hard-coded in the code, but could be easily replaced with dynamic data from an external source.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The RoomOccupancyCalculator component has a form with two input fields, one for the number of premium rooms and one for the number of economy rooms. The input fields are bound to their corresponding state variables using the value and onChange attributes. When the user changes the values of the input fields, the state variables are updated accordingly.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+When the user submits the form, an event handler called handleSubmit is called. This event handler calculates the number of premium and economy rooms that will be occupied, based on the rules specified in the prompt, and calculates the total revenue generated for the night. The results are then displayed in a table below the form.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Is there a problem ?
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions, feel free to email me directly.
